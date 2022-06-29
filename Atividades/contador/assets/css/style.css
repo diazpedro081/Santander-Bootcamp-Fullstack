@@ -1,0 +1,49 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background: url(../img/calc-Backgroud.webp) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-backgroud-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: medium;
+}
+
+#btnSoma, #btnSubtrai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid rgb(172, 174, 89);
+    background-color: rgb(250, 252, 154);
+    color: rgb(172, 174, 89);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#counter {
+    display: flex;
+}
+
+#currentNumber{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 32pt;
+}
+
+#currentNumber ::before {
+    
+    color: rgb(202, 101, 103);
+}
