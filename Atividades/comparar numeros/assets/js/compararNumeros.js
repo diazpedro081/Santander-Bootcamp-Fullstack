@@ -11,6 +11,7 @@ function mostra (frase) {
 }
 
 function comparaNumeros(n1, n2) {
+	if(!n1 || !n2) return "Você não inserio os numeros corretamente. </br> Tente novamente."
 	const primeiraFrase = criaPrimeiraFrase(n1, n2);
 	const segundaFrase = criaSegundaFrase(n1, n2);
 
@@ -18,8 +19,8 @@ function comparaNumeros(n1, n2) {
 }
 
 function criaPrimeiraFrase(n1, n2) {
-	let primeiraFrase = `Os números ${n1} e ${n2}`;
-	let simNao = 'não';
+	var primeiraFrase = `Os números ${n1} e ${n2}`;
+	var simNao = 'não';
 
 	if (n1 === n2) {
 		simNao = '';
@@ -30,8 +31,8 @@ function criaPrimeiraFrase(n1, n2) {
 
 function criaSegundaFrase(n1, n2) {
 	const soma = n1 + n2;
-	let comparaDez = 'menor';
-	let comparaVinte = 'menor';
+	var comparaDez = 'menor';
+	var comparaVinte = 'menor';
 
 	if (soma > 10) {
 		comparaDez = 'maior';
