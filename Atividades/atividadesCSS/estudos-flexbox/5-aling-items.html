@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - aling items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+        
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .Column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>center</h1>
+
+    <section class="container center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, recusandae, quisquam dicta laborum magnam illum minus sit nam facere nemo eaque. Illum quibusdam consequuntur est ipsam hic! Consectetur, enim aliquid?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint omnis quos quia illum unde nemo officiis fugit nihil itaque minima eligendi facere quibusdam, nobis necessitatibus voluptates odit molestiae provident pariatur.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam voluptates iusto, a, tenetur magnam consequatur eum amet nemo vero corrupti, consectetur doloribus? Architecto, iusto harum et placeat illo inventore.</div>
+    </section>
+
+    <p>Strectch</p>
+
+    <section class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, recusandae, quisquam dicta laborum magnam illum minus sit nam facere nemo eaque. Illum quibusdam consequuntur est ipsam hic! Consectetur, enim aliquid?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint omnis quos quia illum unde nemo officiis fugit nihil itaque minima eligendi facere quibusdam, nobis necessitatibus voluptates odit molestiae provident pariatur.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam voluptates iusto, a, tenetur magnam consequatur eum amet nemo vero corrupti, consectetur doloribus? Architecto, iusto harum et placeat illo inventore.</div>
+    </section>
+
+    <p>flex-start</p>
+
+    <section class="container start">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, recusandae, quisquam dicta laborum magnam illum minus sit nam facere nemo eaque. Illum quibusdam consequuntur est ipsam hic! Consectetur, enim aliquid?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint omnis quos quia illum unde nemo officiis fugit nihil itaque minima eligendi facere quibusdam, nobis necessitatibus voluptates odit molestiae provident pariatur.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam voluptates iusto, a, tenetur magnam consequatur eum amet nemo vero corrupti, consectetur doloribus? Architecto, iusto harum et placeat illo inventore.</div>
+    </section>
+
+    <p>flex-end</p>
+
+    <section class="container end">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, recusandae, quisquam dicta laborum magnam illum minus sit nam facere nemo eaque. Illum quibusdam consequuntur est ipsam hic! Consectetur, enim aliquid?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint omnis quos quia illum unde nemo officiis fugit nihil itaque minima eligendi facere quibusdam, nobis necessitatibus voluptates odit molestiae provident pariatur.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam voluptates iusto, a, tenetur magnam consequatur eum amet nemo vero corrupti, consectetur doloribus? Architecto, iusto harum et placeat illo inventore.</div>
+    </section>
+
+    <p>baseline</p>
+
+    <section class="container baseline">
+        <div class="item">pedro dias de barros binseto</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+    </section>
+
+    <h1>Column</h1>
+
+    <h1>center Column</h1>
+
+    <section class="container center Column">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, recusandae, quisquam dicta laborum magnam illum minus sit nam facere nemo eaque. Illum quibusdam consequuntur est ipsam hic! Consectetur, enim aliquid?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint omnis quos quia illum unde nemo officiis fugit nihil itaque minima eligendi facere quibusdam, nobis necessitatibus voluptates odit molestiae provident pariatur.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam voluptates iusto, a, tenetur magnam consequatur eum amet nemo vero corrupti, consectetur doloribus? Architecto, iusto harum et placeat illo inventore.</div>
+    </section>
+
+    <p>Strectch Column</p>
+
+    <section class="container stretch Column">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, recusandae, quisquam dicta laborum magnam illum minus sit nam facere nemo eaque. Illum quibusdam consequuntur est ipsam hic! Consectetur, enim aliquid?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint omnis quos quia illum unde nemo officiis fugit nihil itaque minima eligendi facere quibusdam, nobis necessitatibus voluptates odit molestiae provident pariatur.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam voluptates iusto, a, tenetur magnam consequatur eum amet nemo vero corrupti, consectetur doloribus? Architecto, iusto harum et placeat illo inventore.</div>
+    </section>
+
+    <p>flex-start Column</p>
+
+    <section class="container start Column">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, recusandae, quisquam dicta laborum magnam illum minus sit nam facere nemo eaque. Illum quibusdam consequuntur est ipsam hic! Consectetur, enim aliquid?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint omnis quos quia illum unde nemo officiis fugit nihil itaque minima eligendi facere quibusdam, nobis necessitatibus voluptates odit molestiae provident pariatur.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam voluptates iusto, a, tenetur magnam consequatur eum amet nemo vero corrupti, consectetur doloribus? Architecto, iusto harum et placeat illo inventore.</div>
+    </section>
+
+    <p>flex-end Column</p>
+
+    <section class="container end Column">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, recusandae, quisquam dicta laborum magnam illum minus sit nam facere nemo eaque. Illum quibusdam consequuntur est ipsam hic! Consectetur, enim aliquid?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint omnis quos quia illum unde nemo officiis fugit nihil itaque minima eligendi facere quibusdam, nobis necessitatibus voluptates odit molestiae provident pariatur.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam voluptates iusto, a, tenetur magnam consequatur eum amet nemo vero corrupti, consectetur doloribus? Architecto, iusto harum et placeat illo inventore.</div>
+    </section>
+
+    <p>baseline Column</p>
+
+    <section class="container baseline Column">
+        <div class="item">pedro dias de barros binseto</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+    </section>
+
+<h1>pratica - Alinhamento centro de tela</h1>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+    </section>
+</body>
+</html>
