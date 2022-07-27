@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Course } from "./course";
 import { CourseService } from "./course.service";
+import { CourseModule } from "./course.module";
 
 //@ts-ignore
 @Component({
